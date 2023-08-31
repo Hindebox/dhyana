@@ -2,6 +2,7 @@ import homeIcon from "../../assets/vectors/controls/home.svg";
 import pauseIcon from "../../assets/vectors/controls/pause.svg";
 import playIcon from "../../assets/vectors/controls/play.svg";
 import resetIcon from "../../assets/vectors/controls/reset.svg";
+import defaultVideo from "../../assets/videos/timer-default-bg.mp4";
 import { useState, useEffect } from "react";
 import {
   setTime,
@@ -83,7 +84,7 @@ export default function Controllers() {
     dispatch(setTime(10)); //reset the range slider to the defualt value
     dispatch(setSeconds(0));
     dispatch(setDisplaySwipe(false)); //hide swipeable edge
-    dispatch(setVideo("/src/assets/videos/timer-default-bg.mp4"));
+    dispatch(setVideo({ defaultVideo }));
     navigate("/");
   }
 
