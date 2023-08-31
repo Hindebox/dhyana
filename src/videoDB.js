@@ -1,93 +1,115 @@
-import axios from "axios";
-const apiKey = "AIzaSyB6heMzMub6S0k3BB6wR-ipShpvFX_gj5k";
-const searchQuery = "react tutorial";
+//for the Timer
+import seaVid from "./assets/videos/sea.mp4";
+import bonfireVid from "./assets/videos/bonfire.mp4";
+import windVid from "./assets/videos/wind.mp4";
+import rainVid from "./assets/videos/rain.mp4";
+import forestVid from "./assets/videos/forest.mp4";
+import spaceVid from "./assets/videos/space.mp4";
+
+//for guides
+import morningGuide from "./assets/videos/guides/morning.mp4";
+import clearGuide from "./assets/videos/guides/clear-mind.mp4";
+import positivityGuide from "./assets/videos/guides/positivity.mp4";
+import healingGuide from "./assets/videos/guides/healing.mp4";
+import sleepGuide from "./assets/videos/guides/sleep.mp4";
+import goodVibesGuide from "./assets/videos/guides/good-vibes.mp4";
+
+//for presets
+import energyPreset from "./assets/videos/preset/energy.mp4";
+import anxietyPreset from "./assets/videos/preset/anxiety.mp4";
+import esteemePreset from "./assets/videos/preset/esteeme.mp4";
+import insecurityPreset from "./assets/videos/preset/insecurity.mp4";
+import sleepPreset from "./assets/videos/preset/sleep.mp4";
+import confusionPreset from "./assets/videos/preset/confusion.mp4";
 
 const videoDB = [
   //timer
   {
     title: "sea",
-    videoUrl: "/src/assets/videos/sea.mp4",
+    videoUrl: { seaVid },
   },
   {
     title: "bonfire",
-    videoUrl: "/src/assets/videos/bonfire.mp4",
+    videoUrl: { bonfireVid },
   },
   {
     title: "wind",
-    videoUrl: "/src/assets/videos/wind.mp4",
+    videoUrl: { windVid },
   },
   {
     title: "rain",
-    videoUrl: "/src/assets/videos/rain.mp4",
+    videoUrl: { rainVid },
   },
   {
     title: "forest",
-    videoUrl: "/src/assets/videos/forest.mp4",
+    videoUrl: { forestVid },
   },
   {
     title: "space",
-    videoUrl: "/src/assets/videos/space.mp4",
+    videoUrl: { spaceVid },
   },
+
   //guides
   {
     title: "good morning",
-    videoUrl: "/src/assets/videos/guides/morning.mp4",
+    videoUrl: { morningGuide },
     time: 12,
   },
   {
     title: "clear your mind",
-    videoUrl: "/src/assets/videos/guides/clear-mind.mp4",
+    videoUrl: { clearGuide },
     time: 11,
   },
   {
     title: "positive mindset",
-    videoUrl: "/src/assets/videos/guides/positivity.mp4",
+    videoUrl: { positivityGuide },
     time: 11,
   },
   {
     title: "heal yourself",
-    videoUrl: "/src/assets/videos/guides/healing.mp4",
+    videoUrl: { healingGuide },
     time: 15,
   },
   {
     title: "sleep well",
-    videoUrl: "/src/assets/videos/guides/sleep.mp4",
+    videoUrl: { sleepGuide },
     time: 12,
   },
   {
     title: "good vibes",
-    videoUrl: "/src/assets/videos/guides/good-vibes.mp4",
+    videoUrl: { goodVibesGuide },
     time: 16,
   },
+
   //presets
   {
     title: "low battery",
-    videoUrl: "/src/assets/videos/preset/energy.mp4",
+    videoUrl: { energyPreset },
     time: 10,
   },
   {
     title: "anxiety",
-    videoUrl: "/src/assets/videos/preset/anxiety.mp4",
+    videoUrl: { anxietyPreset },
     time: 15,
   },
   {
     title: "self esteeme",
-    videoUrl: "/src/assets/videos/preset/esteeme.mp4",
+    videoUrl: { esteemePreset },
     time: 15,
   },
   {
     title: "insecurity",
-    videoUrl: "/src/assets/videos/preset/insecurity.mp4",
+    videoUrl: { insecurityPreset },
     time: 20,
   },
   {
     title: "insomnia",
-    videoUrl: "/src/assets/videos/preset/sleep.mp4",
+    videoUrl: { sleepPreset },
     time: 15,
   },
   {
     title: "confusion",
-    videoUrl: "/src/assets/videos/preset/confusion.mp4",
+    videoUrl: { confusionPreset },
     time: 15,
   },
 ];

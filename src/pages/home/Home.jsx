@@ -1,4 +1,7 @@
 import "./home.scss";
+import guideBg from "../../assets/images/personal-guide.jpg";
+import timerBg from "../../assets/images/your-timer.jpg";
+import presetBg from "../../assets/images/choose-preset.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,19 +40,19 @@ export default function Home() {
         <Card
           lineTop="Meditation"
           title="Guide"
-          bgUrl="/assets/images/personal-guide.jpg"
+          bgUrl={guideBg}
           handleClick={() => handleSwipe("guide")}
         />
         <Card
           lineTop="Set your own"
           title="Timer"
-          bgUrl="/assets/images/your-timer.jpg"
+          bgUrl={timerBg}
           handleClick={() => handleSwipe("timer")}
         />
         <Card
           lineTop="Choose a"
           title="Preset"
-          bgUrl="/assets/images/choose-preset.jpg"
+          bgUrl={presetBg}
           handleClick={() => handleSwipe("preset")}
         />
       </div>
@@ -57,25 +60,13 @@ export default function Home() {
       <div className="sliderMobile">
         <Slider {...sliderSettings}>
           <div onClick={() => handleSwipe("guide")}>
-            <Card
-              lineTop="Meditation"
-              title="Guide"
-              bgUrl="/assets/images/personal-guide.jpg"
-            />
+            <Card lineTop="Meditation" title="Guide" bgUrl={guideBg} />
           </div>
           <div onClick={() => handleSwipe("timer")}>
-            <Card
-              lineTop="Set your own"
-              title="Timer"
-              bgUrl="/assets/images/your-timer.jpg"
-            />
+            <Card lineTop="Set your own" title="Timer" bgUrl={timerBg} />
           </div>
           <div onClick={() => handleSwipe("preset")}>
-            <Card
-              lineTop="Choose a"
-              title="Preset"
-              bgUrl="/assets/images/choose-preset.jpg"
-            />
+            <Card lineTop="Choose a" title="Preset" bgUrl={presetBg} />
           </div>
         </Slider>
       </div>

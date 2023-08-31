@@ -1,4 +1,5 @@
 import "../../assets/styles/form/form.scss";
+import googleIcon from "../../assets/vectors/google-icon-logo.svg";
 import FormError from "../form/form-error/FormError";
 import {
   setUser,
@@ -155,10 +156,7 @@ export default function AuthForm({ formTitle, submitBtnText, handleSign }) {
       <div className="signWith">
         <p>or</p>
         <button className="googleSign" onClick={googleLog}>
-          <img
-            src="/src/assets/vectors/google-icon-logo.svg"
-            alt="sign in with google"
-          />
+          <img src={googleIcon} alt="sign in with google" />
           Sign in with Google
         </button>
       </div>

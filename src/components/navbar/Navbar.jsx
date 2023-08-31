@@ -1,4 +1,5 @@
 import "./navbar.scss";
+import logoIcon from "../../assets/logo/logo_icon_b.svg";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import { setFormData, setUser } from "../../redux/meditation";
 import { getAuth, signOut } from "firebase/auth";
@@ -50,11 +51,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <Link to="/">
-        <img
-          src="/src/assets/logo/logo_icon_b.svg"
-          alt="blue logo icon"
-          className="nav-logo"
-        />
+        <img src={logoIcon} alt="blue logo icon" className="nav-logo" />
       </Link>
       <div className="leftNav">
         <Link to="/blog">

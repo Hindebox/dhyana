@@ -1,3 +1,7 @@
+import homeIcon from "../../assets/vectors/controls/home.svg";
+import pauseIcon from "../../assets/vectors/controls/pause.svg";
+import playIcon from "../../assets/vectors/controls/play.svg";
+import resetIcon from "../../assets/vectors/controls/reset.svg";
 import { useState, useEffect } from "react";
 import {
   setTime,
@@ -86,23 +90,19 @@ export default function Controllers() {
   return (
     <div className="controls">
       <img
-        src="/src/assets/vectors/controls/home.svg"
+        src={homeIcon}
         alt="home icon"
         className="home"
         onClick={handleBackHome}
       />
       <img
-        src={
-          playControl
-            ? "/src/assets/vectors/controls/pause.svg"
-            : "/src/assets/vectors/controls/play.svg"
-        }
+        src={playControl ? { pauseIcon } : { playIcon }}
         alt="play or pause icon"
         className="pause"
         onClick={handlePlay}
       />
       <img
-        src="/src/assets/vectors/controls/reset.svg"
+        src={resetIcon}
         alt="reset icon"
         className="reset"
         onClick={handleReset}

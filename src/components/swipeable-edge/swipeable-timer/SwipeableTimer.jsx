@@ -1,4 +1,10 @@
 import "../swipeable-edge.scss";
+import bonfireIcon from "../../../assets/vectors/timer/bonfire.svg";
+import seaIcon from "../../../assets/vectors/timer/sea.svg";
+import windIcon from "../../../assets/vectors/timer/wind.svg";
+import rainIcon from "../../../assets/vectors/timer/rain.svg";
+import forestIcon from "../../../assets/vectors/timer/forest.svg";
+import spaceIcon from "../../../assets/vectors/timer/space.svg";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import PlayerIcon from "../../player-icon/PlayerIcon";
@@ -32,27 +38,12 @@ export default function SwipeableTimer() {
         </Box>
       </div>
       <div className="sound-icons">
-        <PlayerIcon iconUrl="/src/assets/vectors/timer/sea.svg" title={"sea"} />
-        <PlayerIcon
-          iconUrl="/src/assets/vectors/timer/bonfire.svg"
-          title={"bonfire"}
-        />
-        <PlayerIcon
-          iconUrl="/src/assets/vectors/timer/wind.svg"
-          title={"wind"}
-        />
-        <PlayerIcon
-          iconUrl="/src/assets/vectors/timer/rain.svg"
-          title={"rain"}
-        />
-        <PlayerIcon
-          iconUrl="/src/assets/vectors/timer/forest.svg"
-          title={"forest"}
-        />
-        <PlayerIcon
-          iconUrl="/src/assets/vectors/timer/space.svg"
-          title={"space"}
-        />
+        <PlayerIcon iconUrl={seaIcon} title={"sea"} />
+        <PlayerIcon iconUrl={bonfireIcon} title={"bonfire"} />
+        <PlayerIcon iconUrl={windIcon} title={"wind"} />
+        <PlayerIcon iconUrl={rainIcon} title={"rain"} />
+        <PlayerIcon iconUrl={forestIcon} title={"forest"} />
+        <PlayerIcon iconUrl={spaceIcon} title={"space"} />
       </div>
     </>
   );

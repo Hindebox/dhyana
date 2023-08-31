@@ -1,5 +1,5 @@
 import "./meditate.scss";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 import Timer from "../../components/timer/Timer";
 import Controllers from "../../components/player-controllers/Controllers";

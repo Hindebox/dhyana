@@ -3,9 +3,8 @@ import videoDB from "../../videoDB";
 import { setVideo, setTime, setInitialTime } from "../../redux/meditation";
 import { useSelector, useDispatch } from "react-redux";
 
-export default function PlayerIcon({ iconUrl, title, clickedIcon }) {
+export default function PlayerIcon({ iconUrl, title }) {
   //video selection
-  const video = useSelector((state) => state.meditation.video);
   const selectedCard = useSelector((state) => state.meditation.card);
   const selectedIcon = videoDB.find((video) => video.title === title);
   const dispatch = useDispatch();
