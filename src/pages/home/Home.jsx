@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navbar from "../../components/navbar/Navbar";
 import Card from "../../components/cards/Card";
-import SwipeableEdge from "../../components/swipeable-edge/swipeableEdge";
+import SwipeableEdge from "../../components/swipeable-edge/SwipeableEdge";
 import { setCard, setDisplaySwipe } from "../../redux/meditation";
 import { useDispatch, useSelector } from "react-redux";
 
