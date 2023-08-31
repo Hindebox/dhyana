@@ -1,5 +1,5 @@
 import "./login.scss";
-import logoIcon from "../../assets/logo/logo_icon_w.svg";
+import logoIcon from "../../assets/logo/logo_icon_b.svg";
 import Loader from "../../components/loader/Loader";
 import SelectionTab from "../../components/form/selection-tab/SelectionTab";
 import { useState, useEffect } from "react";
