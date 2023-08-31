@@ -96,7 +96,7 @@ export default function Controllers() {
         onClick={handleBackHome}
       />
       <img
-        src={playControl ? { pauseIcon } : { playIcon }}
+        src={playControl ? pauseIcon : playIcon}
         alt="play or pause icon"
         className="pause"
         onClick={handlePlay}
