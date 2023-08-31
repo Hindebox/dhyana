@@ -1,4 +1,5 @@
 import "./login.scss";
+import logoIcon from "../../assets/logo/logo_icon_w.svg";
 import Loader from "../../components/loader/Loader";
 import SelectionTab from "../../components/form/selection-tab/SelectionTab";
 import { useState, useEffect } from "react";
@@ -29,11 +30,7 @@ export default function Login() {
             </div>
           </div>
           <div className="login-form-section">
-            <img
-              src="/src/assets/logo/logo_icon_b.svg"
-              alt="logo blue icon"
-              className="welcome-logo"
-            />
+            <img src={logoIcon} alt="logo blue icon" className="welcome-logo" />
             <SelectionTab />
           </div>
         </div>
