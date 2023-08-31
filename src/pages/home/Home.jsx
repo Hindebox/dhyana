@@ -37,19 +37,19 @@ export default function Home() {
         <Card
           lineTop="Meditation"
           title="Guide"
-          bgUrl="/src/assets/images/personal-guide.jpg"
+          bgUrl="/assets/images/personal-guide.jpg"
           handleClick={() => handleSwipe("guide")}
         />
         <Card
           lineTop="Set your own"
           title="Timer"
-          bgUrl="/src/assets/images/your-timer.jpg"
+          bgUrl="/assets/images/your-timer.jpg"
           handleClick={() => handleSwipe("timer")}
         />
         <Card
           lineTop="Choose a"
           title="Preset"
-          bgUrl="/src/assets/images/choose-preset.jpg"
+          bgUrl="/assets/images/choose-preset.jpg"
           handleClick={() => handleSwipe("preset")}
         />
       </div>
@@ -60,21 +60,21 @@ export default function Home() {
             <Card
               lineTop="Meditation"
               title="Guide"
-              bgUrl="/src/assets/images/personal-guide.jpg"
+              bgUrl="/assets/images/personal-guide.jpg"
             />
           </div>
           <div onClick={() => handleSwipe("timer")}>
             <Card
               lineTop="Set your own"
               title="Timer"
-              bgUrl="/src/assets/images/your-timer.jpg"
+              bgUrl="/assets/images/your-timer.jpg"
             />
           </div>
           <div onClick={() => handleSwipe("preset")}>
             <Card
               lineTop="Choose a"
               title="Preset"
-              bgUrl="/src/assets/images/choose-preset.jpg"
+              bgUrl="/assets/images/choose-preset.jpg"
             />
           </div>
         </Slider>
