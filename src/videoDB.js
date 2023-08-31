@@ -26,90 +26,90 @@ const videoDB = [
   //timer
   {
     title: "sea",
-    videoUrl: { seaVid },
+    videoUrl: seaVid,
   },
   {
     title: "bonfire",
-    videoUrl: { bonfireVid },
+    videoUrl: bonfireVid,
   },
   {
     title: "wind",
-    videoUrl: { windVid },
+    videoUrl: windVid,
   },
   {
     title: "rain",
-    videoUrl: { rainVid },
+    videoUrl: rainVid,
   },
   {
     title: "forest",
-    videoUrl: { forestVid },
+    videoUrl: forestVid,
   },
   {
     title: "space",
-    videoUrl: { spaceVid },
+    videoUrl: spaceVid,
   },
 
   //guides
   {
     title: "good morning",
-    videoUrl: { morningGuide },
+    videoUrl: morningGuide,
     time: 12,
   },
   {
     title: "clear your mind",
-    videoUrl: { clearGuide },
+    videoUrl: clearGuide,
     time: 11,
   },
   {
     title: "positive mindset",
-    videoUrl: { positivityGuide },
+    videoUrl: positivityGuide,
     time: 11,
   },
   {
     title: "heal yourself",
-    videoUrl: { healingGuide },
+    videoUrl: healingGuide,
     time: 15,
   },
   {
     title: "sleep well",
-    videoUrl: { sleepGuide },
+    videoUrl: sleepGuide,
     time: 12,
   },
   {
     title: "good vibes",
-    videoUrl: { goodVibesGuide },
+    videoUrl: goodVibesGuide,
     time: 16,
   },
 
   //presets
   {
     title: "low battery",
-    videoUrl: { energyPreset },
+    videoUrl: energyPreset,
     time: 10,
   },
   {
     title: "anxiety",
-    videoUrl: { anxietyPreset },
+    videoUrl: anxietyPreset,
     time: 15,
   },
   {
     title: "self esteeme",
-    videoUrl: { esteemePreset },
+    videoUrl: esteemePreset,
     time: 15,
   },
   {
     title: "insecurity",
-    videoUrl: { insecurityPreset },
+    videoUrl: insecurityPreset,
     time: 20,
   },
   {
     title: "insomnia",
-    videoUrl: { sleepPreset },
+    videoUrl: sleepPreset,
     time: 15,
   },
   {
     title: "confusion",
-    videoUrl: { confusionPreset },
+    videoUrl: confusionPreset,
     time: 15,
   },
 ];
