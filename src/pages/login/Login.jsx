@@ -30,7 +30,7 @@ export default function Login() {
           </div>
           <div className="login-form-section">
             <img
-              src="/src/assets/logo/logo_icon_b.svg"
+              src="./assets/logo/logo_icon_b.svg"
               alt="logo blue icon"
               className="welcome-logo"
             />
