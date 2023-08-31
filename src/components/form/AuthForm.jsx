@@ -90,8 +90,9 @@ export default function AuthForm({ formTitle, submitBtnText, handleSign }) {
           dispatch(setUser(userInfo));
         }
       })
-      .catch(() => {
+      .catch((error) => {
         alert("Failed login. Please try again!");
+        console.log(error);
       });
   }
 
