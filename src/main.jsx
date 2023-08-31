@@ -6,7 +6,7 @@ import store from "./redux/store";
 import App from "./App";
 import ErrorPage from "./pages/error-page/ErrorPage";
 import Login from "./pages/login/Login";
-import Meditate from "./pages/meditate/meditate";
+import Meditate from "./pages/meditate/Meditate";
 import Blog from "./pages/blog/Blog";
 import ForgotPass from "./components/form/forgotPass/ForgotPass";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
