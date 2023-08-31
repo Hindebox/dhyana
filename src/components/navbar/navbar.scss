@@ -1,0 +1,72 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins/global.scss";
+
+.navbar {
+  @include flex-center;
+  @include size(100%, auto);
+  justify-content: space-between;
+  padding: 15px 50px;
+
+  top: 0;
+  z-index: 100;
+  .nav-logo {
+    width: 40px;
+  }
+  .leftNav {
+    @include flex-center;
+    gap: 20px;
+
+    p {
+      color: $blue;
+      cursor: pointer;
+      &:hover {
+        transition: 0.5s;
+        font-weight: 500;
+      }
+    }
+    .propic {
+      @include size(40px, 40px);
+      @include background-image("");
+      position: relative;
+      border: 1px solid $blue;
+      border-radius: 100%;
+      cursor: pointer;
+      &:hover {
+        background-color: $blue;
+        &::before {
+          @include size(40px, 40px);
+          content: " ";
+          position: absolute;
+          display: block;
+          background-color: rgba(0, 0, 0, 0.4);
+          border-radius: 100%;
+        }
+      }
+
+      .userNick {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        transition: 0.3s;
+      }
+      .logoutIcon {
+        width: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s;
+        fill: $cream-white;
+      }
+    }
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  .navbar {
+    padding: 15px;
+  }
+}

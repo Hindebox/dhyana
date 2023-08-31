@@ -1,0 +1,69 @@
+@import "../../assets/styles/mixins/global.scss";
+@import "../../assets/styles/variables.scss";
+
+.login-page {
+  @include size(100%, 100vh);
+  overflow: hidden;
+  @include flex-center;
+  .welcome-section,
+  .login-form-section {
+    @include size(45%, 90vh);
+    margin: 10px;
+  }
+  .welcome-section {
+    @include background-image("/src/assets/images/welcome-to-dhyana.jpg");
+    border-radius: 36px;
+    .overlayed-text {
+      @include size(100%, 100%);
+      @include flex-column(end, start);
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 100px 50px;
+      border-radius: 36px;
+      color: $cream-white;
+    }
+  }
+  .login-form-section {
+    padding: 100px;
+    gap: 70px;
+    @include flex-column(space-between, center);
+    .welcome-logo {
+      width: 70px;
+    }
+  }
+}
+
+//TABLET
+@media (min-width: 500px) and (max-width: 1100px) {
+  .login-form-section {
+    padding: 10px !important;
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  .login-page {
+    overflow-y: scroll !important;
+    flex-direction: column;
+    @include size(100%, auto);
+    .welcome-section,
+    .login-form-section {
+      margin: 0;
+      @include size(100%, 100vh);
+    }
+    .welcome-section {
+      border-radius: 0;
+      .overlayed-text {
+        border-radius: 0px;
+        padding: 70px 30px;
+      }
+    }
+    .login-form-section {
+      @include flex-column(center, center);
+      padding: 15px;
+      padding-top: 50px;
+      .welcome-logo {
+        width: 60px;
+      }
+    }
+  }
+}

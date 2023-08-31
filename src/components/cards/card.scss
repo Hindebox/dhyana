@@ -1,0 +1,66 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins/global.scss";
+
+.optionCard {
+  @include background-image("");
+  @include size(23%, 60vh);
+  border-radius: 36px;
+  animation: fadein ease-in;
+  transition: 1.3s;
+  cursor: pointer;
+  .overlayed {
+    @include size(100%, 100%);
+    @include flex-column(center, center);
+    background-color: rgba(43, 43, 43, 0.5);
+    color: $cream-white;
+    border-radius: 36px;
+    transition: 1.3s;
+    p {
+      font-size: 18px;
+      font-weight: 100;
+    }
+  }
+}
+
+.overlayed:hover {
+  background-color: rgba(43, 43, 43, 0.3);
+  transition: 1.3s;
+}
+
+.optionCard:hover {
+  transform: translateY(-5px);
+  transition: 1.3s;
+  box-shadow: 21px 21px 42px #acacac, -21px -21px 42px #ffffff;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//TABLET
+@media (min-width: 500px) and (max-width: 961px) {
+  .optionCard {
+    @include size(30%, 55vh);
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  .optionCard {
+    @include size(100vw, 100vh);
+    animation-duration: 0s !important;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 0;
+    .overlayed {
+      border-radius: 0;
+    }
+  }
+}

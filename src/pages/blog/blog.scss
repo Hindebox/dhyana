@@ -1,0 +1,97 @@
+@import "../../assets/styles/global.scss";
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins/global.scss";
+
+.blogContainer {
+  padding: 15px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 22%);
+  justify-content: space-around;
+  gap: 50px;
+  .article {
+    @include flex-column(space-between, center);
+    width: 100%;
+    padding: 20px 15px;
+    border: 1px solid $blue;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    h4 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+    p,
+    h4 {
+      padding: 0 10px;
+    }
+    .source {
+      font-size: 12px;
+      align-self: end;
+      margin: 15px 5px;
+    }
+    img {
+      @include size(100%, 250px);
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+    &:hover {
+      transform: translateY(-5px);
+      transition: 1.3s;
+      box-shadow: 15px 15px 42px #acacacb7, -15px -15px 42px #ffffff;
+    }
+  }
+}
+
+.pagination {
+  @include flex-center;
+  ul {
+    @include flex-center;
+    gap: 10px;
+    padding: 50px 0;
+    li {
+      @include flex-center;
+      @include size(30px, 30px);
+      cursor: pointer;
+      border-radius: 100%;
+      padding: 5px;
+      padding-bottom: 8px;
+      &:hover {
+        transition: 0.3s;
+        background-color: $light-blue;
+        color: $cream-white;
+      }
+    }
+    .previous,
+    .next {
+      font-weight: 700;
+      font-size: 25px;
+      color: $blue;
+    }
+    .selected {
+      background-color: $blue;
+      color: $cream-white;
+      font-weight: 500;
+    }
+  }
+}
+
+//TABLET
+@media (min-width: 641px) and (max-width: 961px) {
+  .blogContainer {
+    padding: 15px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  .blogContainer {
+    padding: 15px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

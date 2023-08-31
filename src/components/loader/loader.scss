@@ -1,0 +1,43 @@
+@import "../../assets/styles/mixins/global.scss";
+@import "../../assets/styles/variables.scss";
+
+.loader-full {
+  @include size(100%, 100vh);
+  @include flex-center;
+  flex-direction: column;
+  svg {
+    @include size(20%, 20%);
+    .logo-icon {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dash 3s linear infinite;
+    }
+  }
+  h2 {
+    color: $blue;
+    margin-top: 20px;
+  }
+}
+
+//ANIMATION
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  .loader-full {
+    svg {
+      @include size(25%, 25%);
+    }
+    h2 {
+      font-size: 40px;
+      margin-top: 10px;
+    }
+  }
+}

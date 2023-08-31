@@ -1,0 +1,56 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins/global.scss";
+
+.home {
+  @include size(100%, 100vh);
+  overflow: hidden;
+  position: relative;
+  h1 {
+    padding: 20px;
+  }
+  .optionCards {
+    @include flex-center;
+    gap: 30px;
+  }
+  .sliderMobile {
+    display: none;
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  //white logo and text for overlayed navbar
+  .home-navbar {
+    @include size(100%, auto);
+    top: 0;
+    z-index: 100;
+    position: absolute;
+    p {
+      color: white !important;
+    }
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+  .home {
+    h1 {
+      display: none;
+    }
+    .optionCards {
+      display: none;
+    }
+    .sliderMobile {
+      display: block;
+      div {
+        height: 100vh;
+      }
+      .slick-dots {
+        position: absolute !important;
+        bottom: 20px;
+        li button::before {
+          color: $cream-white;
+        }
+      }
+    }
+  }
+}

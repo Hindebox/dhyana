@@ -1,0 +1,114 @@
+@import "../../assets/styles/global.scss";
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins/global.scss";
+
+.swipeableEdge {
+  @include flex-column(center, center);
+  justify-content: start;
+  @include size(100%, auto);
+  padding: 60px 0;
+  gap: 20px;
+  background-color: $light-blue;
+  position: absolute;
+  bottom: -100vh;
+  z-index: 999;
+  border-radius: 36px 36px 0 0;
+  transition: 1s;
+  opacity: 0;
+  .closeSwipe {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    .css-i4bv87-MuiSvgIcon-root {
+      color: $blue;
+      font-size: 30px;
+    }
+  }
+  h3 {
+    color: $blue;
+    text-align: center;
+
+    padding: 0 30px;
+  }
+  //range slider style
+  .slidecontainer {
+    width: 50%;
+    .slider {
+      @include size(100%, 7px);
+      color: #7698b3;
+    }
+    .css-14pt78w-MuiSlider-rail {
+      background-color: $cream-white;
+      opacity: 0.5;
+    }
+    .css-nnid7-MuiSlider-valueLabel:before {
+      display: none;
+    }
+    .css-nnid7-MuiSlider-valueLabel {
+      background-color: transparent;
+      color: $text-black;
+    }
+  }
+  //icons container
+  .sound-icons {
+    @include flex-center;
+    gap: 20px;
+  }
+  button {
+    width: 200px;
+    border-radius: 12px;
+    background-color: $blue;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 14px;
+    transition: 0.5s;
+    &:hover {
+      transition: 0.5s;
+      background-color: $cream-white;
+      color: $blue;
+    }
+  }
+}
+
+.visible {
+  opacity: 1;
+  bottom: 0;
+}
+
+//TABLET
+@media (min-width: 641px) and (max-width: 961px) {
+  .swipeableEdge {
+    h3 {
+      font-size: 60px !important;
+    }
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  .swipeableEdge {
+    padding: 40px 0;
+    h3 {
+      font-size: 30px;
+    }
+    .slidecontainer {
+      width: 80%;
+    }
+    .closeSwipe {
+      top: 30px !important;
+      left: 50%;
+      transform: translateY(-50%);
+    }
+    .sound-icons {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 20px;
+    }
+    .visible {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+}

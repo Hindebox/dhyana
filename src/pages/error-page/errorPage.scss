@@ -1,0 +1,45 @@
+@import "../../assets/styles/global.scss";
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins/global.scss";
+
+.error-page {
+  @include flex-center;
+  @include size(100%, 100vh);
+  overflow: hidden;
+  .error-message {
+    @include size(50%, auto);
+    @include flex-column(center, center);
+    padding: 100px 50px;
+    border: 1px solid $blue;
+    border-radius: 36px;
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      color: $text-black;
+    }
+    button {
+      @include flex-center;
+      gap: 10px;
+      background-color: $blue;
+      border-radius: 20px;
+      padding: 5px 25px;
+      color: $cream-white;
+      margin-top: 40px;
+    }
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  .error-page {
+    .error-message {
+      @include size(90%, auto);
+      padding: 50px 33px;
+      h2 {
+        font-size: 45px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

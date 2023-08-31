@@ -1,0 +1,44 @@
+@import "../../assets/styles/global.scss";
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins/global.scss";
+
+.player-icon-container {
+  @include flex-column(center, center);
+  gap: 10px;
+  .player-icon {
+    @include flex-center;
+    @include size(90px, 90px);
+    border: 1.5px solid $blue;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover,
+    &::selection {
+      background-color: $blue;
+      transition: 0.7s;
+    }
+    img {
+      width: 95%;
+    }
+  }
+  p {
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .player-icon-container {
+    .player-icon {
+      @include size(80px, 80px);
+      border-radius: 25px;
+      img {
+        width: 85%;
+      }
+    }
+    p {
+      font-size: 12.5px;
+    }
+  }
+}

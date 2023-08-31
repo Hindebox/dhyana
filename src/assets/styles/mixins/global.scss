@@ -1,0 +1,24 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column($justify-content, $align) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  justify-content: $justify-content;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin background-image($url) {
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

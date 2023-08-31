@@ -1,0 +1,71 @@
+@import "../../assets/styles/global.scss";
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins/global.scss";
+
+.meditate-page {
+  @include size(100%, 100vh);
+  overflow: hidden;
+  .overlay-timer {
+    @include size(100%, 100vh);
+    overflow: hidden;
+    @include flex-column(end, center);
+    padding-bottom: 25px;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    backdrop-filter: blur(6px);
+    color: $cream-white;
+    .timer {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      @include flex-center;
+      font-size: 110px;
+      h2 {
+        font-size: 110px;
+        text-align: center;
+        width: 200px;
+        opacity: 0.5;
+      }
+    }
+
+    .controls {
+      @include flex-center;
+      gap: 25px;
+      img {
+        @include size(55px, auto);
+        background-color: rgba(118, 152, 179, 0.41);
+        border-radius: 100%;
+        padding: 4px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background-color: $blue;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.video-container {
+  @include size(100%, 100vh);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  .video-bg {
+    @include size(100%, 100vh);
+    object-fit: cover;
+  }
+}
+
+//MOBILE
+@media (max-width: 500px) {
+  .overlay-timer {
+    .timer {
+      h2 {
+        font-size: 90px !important;
+      }
+    }
+  }
+}
