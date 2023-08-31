@@ -1,4 +1,4 @@
-import "./ErrorPage.scss";
+import "./errorPage.scss";
 import { useRouteError } from "react-router-dom";
 import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
