@@ -92,7 +92,6 @@ export default function AuthForm({ formTitle, submitBtnText, handleSign }) {
       })
       .catch((error) => {
         alert("Failed login. Please try again!");
-        console.log(error);
       });
   }
 
