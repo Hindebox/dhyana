@@ -7,6 +7,7 @@ export default function PlayerIcon({ iconUrl, title }) {
   //video selection
   const selectedCard = useSelector((state) => state.meditation.card);
   const selectedIcon = videoDB.find((video) => video.title === title);
+  console.log(selectedIcon);
   const dispatch = useDispatch();
 
   //handle the bg of the selected icon
