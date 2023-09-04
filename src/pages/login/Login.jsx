@@ -22,7 +22,7 @@ export default function Login() {
         <div className="login-page">
           <div className="welcome-section">
             <div className="overlayed-text">
-              <h2>Welcome to Dhyara</h2>
+              <h2>Welcome to Dhyana</h2>
               <p>
                 Fully focused on "the now" so you can acknowledge and accept
                 your thoughts, feelings, and sensations without judgment.
