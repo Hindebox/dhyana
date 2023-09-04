@@ -25,7 +25,6 @@ export default function Blog() {
   //fetch articles
   useEffect(() => {
     const fetchNews = async () => {
-      console.log(apiKey, apiUrl);
       try {
         const response = await axios.get(apiUrl + "search", {
           params: {
@@ -34,7 +33,6 @@ export default function Blog() {
             token: apiKey,
           },
         });
-        console.log(response);
 
         const fetchedArticles = response.data.articles;
 

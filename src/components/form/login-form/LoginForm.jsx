@@ -42,7 +42,6 @@ export default function Login() {
           ? "OOPS! It seems that the password is invalid. Try again."
           : "OOPS! User not found. Try to register.";
 
-        console.log(err);
         dispatch(setErrorMessage(error));
       });
   }

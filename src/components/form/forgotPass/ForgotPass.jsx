@@ -22,7 +22,6 @@ export default function ForgotPass() {
 
     try {
       await sendPasswordResetEmail(auth, email);
-      console.log("Password reset email sent");
       //show confir message after email sent
       setShowConfirm(true);
       setTimeout(() => {
@@ -39,7 +38,6 @@ export default function ForgotPass() {
         );
       } else {
         alert("Failed to send password reset email. Please try again.");
-        console.error(error.code);
       }
     }
   }
