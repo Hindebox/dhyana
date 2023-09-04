@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://dhyana-meditation.netlify.app/assets/logo_icon_b-4c552f41.svg" alt="Dhyana logo blue icon" width="70px" text-align="center">
+</p>  
 
 # Dhyana ☾ ॐ
 
@@ -7,6 +10,7 @@ Dhyana seeks to grasp the different needs of the user and offer them the necessa
 
 
 ## Test it! 🌿
+[Start now your meditation](https://dhyana-meditation.netlify.app/) 🌙🧘🏽‍♀️✨
 
 ## App description 	
 
