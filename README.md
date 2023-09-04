@@ -1,8 +1,37 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Dhyana ☾ ॐ
 
-Currently, two official plugins are available:
+With **Dhyana**, mindful meditation practice couldn’t
+be simpler.  
+Dhyana seeks to grasp the different needs of the user and offer them the necessary opportunities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Test it! 🌿
+
+## App description 	
+
+This app is a **React** project.  
+It revolves around the idea of time. It offers several possibilities to set a **timer** according to different needs, triggering sound effects, background video...  
+It also provides a **blog** section where you can inquire about
+meditation and yoga.  
+  
+Articles are fetched and filtered from [www.gnews.io](www.gnews.io)
+
+## Tools 🗃️
+BUNDLER: [Vite](https://vitejs.dev/)  
+  
+The app itself uses Vite, React Router, Axios, React Hooks, Redux, Firebase and MUI. 
+
+
+## Usage
+
+- 🔐 Login or Register
+- 👆🏻 Choose a card according if you prefer to use a guide, a preset or set a timer
+- 💫 Choose a mood or a issue
+- ⌛ **Start** your meditation session
+- ⏱️ Pause or Reset your timer if needed
+- 📰 Nourish your mind reading some articles from the blog
+
+
+
+
