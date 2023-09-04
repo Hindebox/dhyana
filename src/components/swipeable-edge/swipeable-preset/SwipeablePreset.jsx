@@ -15,7 +15,7 @@ export default function SwipeablePreset() {
       <div className="sound-icons">
         <PlayerIcon iconUrl={batteryIcon} title={"low battery"} />
         <PlayerIcon iconUrl={anxietyIcon} title={"anxiety"} />
-        <PlayerIcon iconUrl={selfestemeIcon} title={"self esteeme"} />
+        <PlayerIcon iconUrl={selfestemeIcon} title={"self esteem"} />
         <PlayerIcon iconUrl={insecurityIcon} title={"insecurity"} />
         <PlayerIcon iconUrl={insomniaIcon} title={"insomnia"} />
         <PlayerIcon iconUrl={confusionIcon} title={"confusion"} />
