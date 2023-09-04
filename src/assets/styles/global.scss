@@ -45,6 +45,9 @@ body {
     color: $blue;
     text-align: center;
     margin-top: 20px;
+    @media (max-width: 500px) {
+      font-size: 55px;
+    }
     @media (min-width: 500px) and (max-width: 961px) {
       font-size: 60px;
     }
