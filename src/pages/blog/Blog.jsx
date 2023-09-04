@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 export default function Blog() {
   const apiUrl = process.env.API_URL;
   const apiKey = process.env.API_KEY;
+  console.log(apiUrl, apiKey);
   //set pagination
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
