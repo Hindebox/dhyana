@@ -9,7 +9,7 @@ export default function Timer() {
   return (
     <div className="timer">
       <h2>{minutes < 10 ? `0${minutes}` : minutes}</h2>
-      <h5>:</h5>
+      <h3>:</h3>
       <h2>{seconds < 10 ? `0${seconds}` : seconds}</h2>
     </div>
   );
