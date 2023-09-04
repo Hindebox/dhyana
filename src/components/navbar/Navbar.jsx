@@ -27,7 +27,7 @@ export default function Navbar() {
 
   useEffect(() => {
     //show the name's first letter instead of photo
-    if (user && !photoURL && displayName !== "") {
+    if (user && !photoURL && displayName && displayName !== "") {
       const firstLetter = displayName.slice(0, 1);
       setInitials(firstLetter);
     }
