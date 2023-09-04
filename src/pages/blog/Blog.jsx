@@ -34,8 +34,10 @@ export default function Blog() {
             apiKey: apiKey,
           },
         });
+        console.log(response);
 
         const fetchedArticles = response.data.articles;
+        console.log(fetchedArticles);
 
         //Set articles and calculate the total pages
         setArticles(fetchedArticles);
@@ -44,7 +46,7 @@ export default function Blog() {
         //when content is fetched set Loading to false to display articles
         setIsLoading(false);
       } catch (error) {
-        console.error(error);
+        console.log(error);
       }
     };
 
