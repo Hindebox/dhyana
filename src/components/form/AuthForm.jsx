@@ -141,7 +141,7 @@ export default function AuthForm({ formTitle, submitBtnText, handleSign }) {
             <label htmlFor="remember">Remember me</label>
           </div>
           {formTitle === "login" && (
-            <Link to="/resetPassword" target="_blank">
+            <Link to="/resetPassword">
               <div className="forgot">
                 <p>Forgot Password?</p>
               </div>
