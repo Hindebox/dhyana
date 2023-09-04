@@ -9,13 +9,12 @@ import { useEffect, useState } from "react";
 export default function Blog() {
   const apiUrl = process.env.API_URL;
   const apiKey = process.env.API_KEY;
-  console.log(apiUrl, apiKey);
   //set pagination
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   //handle pagination
-  const itemsPerPage = 12;
+  const itemsPerPage = 10;
   const startIndex = currentPage * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const subset = articles.slice(startIndex, endIndex);
@@ -26,18 +25,18 @@ export default function Blog() {
   //fetch articles
   useEffect(() => {
     const fetchNews = async () => {
+      console.log(apiKey, apiUrl);
       try {
-        const response = await axios.get(apiUrl, {
+        const response = await axios.get(apiUrl + "search", {
           params: {
             q: "yoga meditation",
-            language: "en",
-            apiKey: apiKey,
+            lang: "en",
+            token: apiKey,
           },
         });
         console.log(response);
 
         const fetchedArticles = response.data.articles;
-        console.log(fetchedArticles);
 
         //Set articles and calculate the total pages
         setArticles(fetchedArticles);
@@ -46,7 +45,7 @@ export default function Blog() {
         //when content is fetched set Loading to false to display articles
         setIsLoading(false);
       } catch (error) {
-        console.log(error);
+        console.error(error);
       }
     };
 
@@ -68,21 +67,14 @@ export default function Blog() {
           {/* display fetched articles */}
           <div className="blogContainer">
             {subset.map(
-              ({
-                url,
-                title,
-                description,
-                urlToImage,
-                author,
-                publishedAt,
-              }) => (
+              ({ url, title, description, image, source, publishedAt }) => (
                 <BlogArticle
                   key={url}
                   title={title}
                   desc={description}
-                  articleImg={urlToImage}
+                  articleImg={image}
                   souceUrl={url}
-                  author={author}
+                  author={source.name}
                   date={publishedAt}
                 />
               )
