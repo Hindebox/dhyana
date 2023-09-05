@@ -33,6 +33,7 @@
     }
   }
   .home {
+    @include size(100%, 97vh);
     h1 {
       display: none;
     }
