@@ -33,7 +33,7 @@ export default function Meditate() {
   return (
     <>
       {!videoReady ? (
-        <Loading />
+        <Loader />
       ) : (
         <div className="meditate-page">
           {/* bg video */}
