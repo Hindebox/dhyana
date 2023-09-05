@@ -11,7 +11,7 @@ import PlayerIcon from "../../player-icon/PlayerIcon";
 export default function SwipeablePreset() {
   return (
     <>
-      <h3>Select an issue</h3>
+      <h3>Select a reason</h3>
       <div className="sound-icons">
         <PlayerIcon iconUrl={batteryIcon} title={"low battery"} />
         <PlayerIcon iconUrl={anxietyIcon} title={"anxiety"} />
