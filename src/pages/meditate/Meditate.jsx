@@ -1,4 +1,5 @@
 import "./meditate.scss";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Loader from "../../components/loader/Loader";
 import Timer from "../../components/timer/Timer";
