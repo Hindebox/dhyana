@@ -2,7 +2,6 @@ import * as React from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
-import ogImage from "./assets/images/dhyana-og.png";
 import store from "./redux/store";
 import App from "./App";
 import ErrorPage from "./pages/error-page/ErrorPage";
