@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
@@ -75,9 +74,6 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Helmet>
-        <meta property="og:image" content={ogImage} />
-      </Helmet>
       <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
